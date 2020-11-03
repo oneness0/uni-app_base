@@ -7,7 +7,7 @@
 模板具有以下功能特性:
 
 -   使用[easycom 模式](https://uni-app.dcloud.io/collocation/pages?id=easycom)引入[uview-ui](http://www.uviewui.com/)和[uni-ui](https://github.com/dcloudio/uni-ui)UI 框架
--   使用[luch-request](https://www.quanzhan.co/luch-request)作为网络请求库。并完善了拦截器、全局请求 loading 控制等
+-   使用[luch-request](https://www.quanzhan.co/luch-request/guide/3.x/)作为网络请求库。并完善了拦截器、全局请求 loading 控制等
 -   使用[weapp-cookie](https://github.com/charleslo1/weapp-cookie#readme)库让小程序和 APP 端支持 cookie
 -   使用[vuex-persistedstate](https://github.com/robinvdvleuten/vuex-persistedstate#readme)库让 vuex 数据持久化
 -   使用[uni-pages-hot-modules](https://github.com/devilwjp/uni-pages-hot-modules#readme)库让 page.josn 支持模块化
@@ -19,6 +19,24 @@
 -   打包优化：gzip 压缩、开启摇树优化、移除 console 代码
 -   引用[eruda](https://github.com/liriliri/eruda/blob/master/doc/README_CN.md)方便 h5 调试
 
+### 快速启动
+
+```bash
+# 推荐使用yarn（其他涉及到npm命令会用yarn介绍）
+
+# 1.安装依赖
+yarn
+# OR
+npm i
+
+# 2.运行h5项目
+yarn serve
+# OR
+npm run serve
+
+#...
+```
+
 ### 具体说明
 
 #### easycom
@@ -27,7 +45,7 @@ easycom 引入的组件无需再写 import，相关规则在 page.json>easycom �
 
 #### 请求封装
 
-基于[luch-request](https://www.quanzhan.co/luch-request)  
+基于[luch-request](https://www.quanzhan.co/luch-request/guide/3.x/)（请求 API 参见 luch-request 3.x 版本的文档）  
 封装的 request.js 挂载在 vue 的 prototype 上`Vue.prototype.$http = http`  
 全局 loading 的配置可在 config.js 中的 requestConfig 修改
 
@@ -51,7 +69,7 @@ module.exports = {
 };
 ```
 
-单个请求的 loading 参数修改,在请求中的 custom 传入覆盖即可
+单个请求的 loading 参数修改,在请求中的 custom 传入覆盖即可(接口请求)
 
 ```js
 //示例
@@ -71,7 +89,7 @@ tip: 多个 loading 触发时, 默认前面的 loadingText 不会被后面的覆
 
 #### vuex
 
-vuex 的优化写法参考[uview 给的方案](http://www.uviewui.com/guide/globalVariable.html#%E5%85%B7%E4%BD%93%E5%AE%9E%E7%8E%B0)(去掉了它的 vuex 数据持久化方式, 这里用 vuex-persistedstate 实现)
+vuex 的优化写法参考[uview 给的方案](http://www.uviewui.com/guide/globalVariable.html#%E5%85%B7%E4%BD%93%E5%AE%9E%E7%8E%B0)(去掉了 uview 的 vuex 数据持久化方式, 改用 vuex-persistedstate 实现)
 
 #### page 模块化
 
