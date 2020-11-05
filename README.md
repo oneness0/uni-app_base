@@ -97,7 +97,7 @@ vuex 的优化写法参考[uview 给的方案](http://www.uviewui.com/guide/glob
 
 #### 自定义 npm 脚本
 
--   `yarn update`(只支持 yarn): 更新 uni-app 编译器 、uni-ui 和 uview，自动更新 package.json 并下载包。为什么不用`npm update`，因为自带的`npm update`不能筛选包，会把 package.json 中所有的包更新。
+-   `yarn update`(只支持 yarn): 更新 uni-app 编译器 、uni-ui 和 uview，自动更新 package.json 并下载包。为什么不直接用npm自带的`npm update`，因为它不能筛选包，并会把 package.json 中所有的包更新。
 
     > 更改 update 规则请参考[npm-check-updates](https://github.com/raineorshine/npm-check-updates)文档, 修改位置位于 package.json 下的:  
     > "update": "node src/common/scripts/scripts.js update && ncu <font color=#d73a49>\"/^@dcloudio.\*\$|uview-ui/\"</font> -u && yarn"
