@@ -16,14 +16,14 @@
 -   全局统一的配置文件 config.js
 -   支持 npm 命令自动生成组件和页面模板
 -   支持 npm 命令更新 uni-app 编译器 、uni-ui 和 uview
--   打包优化：gzip 压缩、开启摇树优化、移除 console 代码
+-   打包优化：默认开启 gzip 压缩、摇树优化，移除 console 代码
 -   引用[eruda](https://github.com/liriliri/eruda/blob/master/doc/README_CN.md)方便 h5 调试
 
 ### 快速启动
 
-```bash
-# 推荐使用yarn（其他涉及到npm命令会用yarn介绍）
+推荐使用[yarn](https://classic.yarnpkg.com/zh-Hans/docs/install/#windows-stable)（其他涉及到 npm 命令会用 yarn 介绍）
 
+```bash
 # 1.安装依赖
 yarn
 # OR
@@ -97,7 +97,11 @@ vuex 的优化写法参考[uview 给的方案](http://www.uviewui.com/guide/glob
 
 #### 自定义 npm 脚本
 
--   `yarn update`: 更新 uni-app 编译器 、uni-ui 和 uview，自动更新 package.json 并下载包。为什么不用`npm update`，因为自带的`npm update`不能筛选包，会把 package.json 中所有的包更新
+-   `yarn update`(只支持 yarn): 更新 uni-app 编译器 、uni-ui 和 uview，自动更新 package.json 并下载包。为什么不用`npm update`，因为自带的`npm update`不能筛选包，会把 package.json 中所有的包更新。
+
+    > 更改 update 规则请参考[npm-check-updates](https://github.com/raineorshine/npm-check-updates)文档, 修改位置位于 package.json 下的:  
+    > "update": "node src/common/scripts/scripts.js update && ncu <font color=#d73a49>\"/^@dcloudio.\*\$|uview-ui/\"</font> -u && yarn"
+
 -   `yarn temp 文件名 [,路径]`: 生成页面模板
 -   `yarn temp:com 文件名 [,路径]`: 生成组件模板
 
