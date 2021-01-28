@@ -5,7 +5,7 @@
  */
 import Request from 'luch-request';
 import guid from 'uview-ui/libs/function/guid';
-import { requestConfig } from './config';
+import { requestConfig, domain } from './config';
 
 const getTokenStorage = () => {
     let token = '';
@@ -20,7 +20,7 @@ const http = new Request();
 const timer = new Map(); // 存储loading的定时器
 http.setConfig(config => {
     /* 设置全局配置 */
-    config.baseURL = 'https://www.fastmock.site/mock/89183a7c47424b2a4d08d5e2d0a31577/base'; /* 根域名不同 */
+    config.baseURL = domain; /* 根域名不同 */
     config.header = {
         ...config.header
     };

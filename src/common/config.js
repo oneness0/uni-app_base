@@ -1,6 +1,6 @@
 /* 全局配置文件 */
 module.exports = {
-    domain: 'http://www.example.com',
+    domain: 'https://www.fastmock.site/mock/89183a7c47424b2a4d08d5e2d0a31577/base',
     // 是否使用gzip
     productionGzip: true,
     // 需要gzip压缩的文件后缀
