@@ -158,7 +158,7 @@ API 管理或自动生成
 代码提交钩子(代码格式化和规范 commit)  
 代码打包优化完善  
 uni-app 预加载  
-全局 loading 自定义  
+全局注入自定义组件（[已有方案](https://zhuanlan.zhihu.com/p/183919769), 但是只支持小程序，可以参考下）  
 跟随 uni-app 更新到 vue3  
 忽略打包配置文件  
 iconfont 引入
