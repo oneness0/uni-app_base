@@ -99,7 +99,7 @@
         "vue-template-compiler": "^2.6.12"
     },
     "browserslist": [
-        "Android >= 4",
+        "Android >= 6",
         "ios >= 8"
     ],
     "uni-app": {
