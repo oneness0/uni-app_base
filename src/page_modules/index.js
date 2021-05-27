@@ -1,13 +1,7 @@
-const hotRequire = require('uni-pages-hot-modules');
-const files = hotRequire.context('.', true, /\.js$/);
+const files = require.context('.', true, /\.js$/);
 
-const modules = [
-    {
-        path: 'pages/demo/index'
-    }
-    // 在模块里继续引入其他子模块
-    // ,...hotRequire('./home')
-];
+// 在模块里继续引入其他子模块
+const modules = [];
 
 // 遍历当前文件夹并自动导入
 files.keys().forEach(key => {
