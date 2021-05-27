@@ -1,8 +1,11 @@
 /* npm脚本 */
 const inquirer = require('inquirer');
-const argv = process.argv[2] || '';
-switch (argv) {
+const argv = JSON.parse(process.env.npm_config_argv).original;
+switch (argv[0] || '') {
     case 'update':
+        if (argv[1] === '-y') {
+            break;
+        }
         inquirer
             .prompt([
                 {
