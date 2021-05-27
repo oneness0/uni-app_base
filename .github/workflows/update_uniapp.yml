@@ -5,9 +5,7 @@ name: update_uniapp
 
 on:
   schedule:
-    - cron: 0 21 * * *
-  watch:
-    types: started
+    - cron: 0 0 * * WED
 
 jobs:
   build:
@@ -20,8 +18,8 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: '14.x'
-    - run: yarn global add npm-check-updates@11
-    - run: ncu -g \"/^@dcloudio.*$|uview-ui/\" -u
+    - run: yarn
+    - run: yarn update -y
     
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
