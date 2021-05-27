@@ -1,11 +1,11 @@
 /* npm脚本 */
-const inquirer = require('inquirer');
 const argv = JSON.parse(process.env.npm_config_argv).original;
 switch (argv[0] || '') {
     case 'update':
         if (argv[1] === '-y') {
             break;
         }
+        const inquirer = require('inquirer');
         inquirer
             .prompt([
                 {
