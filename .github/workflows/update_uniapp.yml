@@ -21,7 +21,7 @@ jobs:
       with:
         node-version: '14.x'
     - run: yarn global add npm-check-updates@11
-    - run: ncu \"/^@dcloudio.*$|uview-ui/\" -u
+    - run: ncu -g \"/^@dcloudio.*$|uview-ui/\" -u
     
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
