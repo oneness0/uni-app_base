@@ -981,10 +981,10 @@
     recast "*"
     stricter-htmlparser2 "^3.9.6"
 
-"@dcloudio/uni-mp-360@^2.0.0-31920210609001":
-  version "2.0.0-31920210609001"
-  resolved "https://registry.yarnpkg.com/@dcloudio/uni-mp-360/-/uni-mp-360-2.0.0-31920210609001.tgz#ff3a3a0aa0916df9e9267ea46f081b7eaeaac4e6"
-  integrity sha512-1vqP/FFeUl/HR2bQwMEBJj8Arb8Idlbf8HtKBGGdvygT23qRPpxbSRaThuD2vFUYcy6n1a69eF7H88GBtK2f8g==
+"@dcloudio/uni-mp-360@^2.0.0-alpha-31920210706003":
+  version "2.0.0-alpha-31920210706003"
+  resolved "https://registry.yarnpkg.com/@dcloudio/uni-mp-360/-/uni-mp-360-2.0.0-alpha-31920210706003.tgz#67bd93db88e2a03771fed8093c5e844a623b0092"
+  integrity sha512-t5GQ0VnRR2JO+MI56V4VSMaK4gmuRphAsFspz1T6V5DS45l3l7wW12PVjA/M3Z8f0sAk5T8C5jvnWow+Dqr9Lg==
 
 "@dcloudio/uni-mp-alipay@^2.0.0-31920210609001":
   version "2.0.0-31920210609001"
@@ -1051,10 +1051,10 @@
     "@babel/types" "^7.3.3"
     vue-template-compiler "^2.6.10"
 
-"@dcloudio/uni-ui@^1.3.4":
-  version "1.3.4"
-  resolved "https://registry.yarnpkg.com/@dcloudio/uni-ui/-/uni-ui-1.3.4.tgz#7110af49c9438ed6f6715a123cf59177a5eec78e"
-  integrity sha512-SyzNapUX7y7IcAjrJQKxaVUTdVzduORcVnK0fX7yfDkrg5GycqSSUlJ3LwP6BY7UJWBbsO58wS9daq3nD2IDvQ==
+"@dcloudio/uni-ui@^1.3.5":
+  version "1.3.5"
+  resolved "https://registry.yarnpkg.com/@dcloudio/uni-ui/-/uni-ui-1.3.5.tgz#f86ab06be0c791200b59db0b7908b9669189f043"
+  integrity sha512-TcYlaz3as/C6suomv2XzlBtpl6j5uoN5hCmDIuofbOBt6gKDu3qOQ7YyF4fdeEcUYelaaXMdrlSccqQdmlK0sQ==
 
 "@dcloudio/vue-cli-plugin-hbuilderx@^2.0.0-31920210609001":
   version "2.0.0-31920210609001"
