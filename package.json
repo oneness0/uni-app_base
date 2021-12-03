@@ -67,8 +67,9 @@
         "jweixin-module": "^1.6.0",
         "luch-request": "^3.0.6",
         "regenerator-runtime": "^0.13.7",
-        "uview-ui": "^2.0.7",
+        "uview-ui": "~1.8.4",
         "vue": "^2.6.14",
+        "vue-i18n": "^8.26.7",
         "vuex": "^3.6.2",
         "vuex-persistedstate": "^3.2.0",
         "weapp-cookie": "^1.4.6"
@@ -77,6 +78,7 @@
         "@babel/runtime": "~7.12.0",
         "@dcloudio/types": "*",
         "@dcloudio/uni-automator": "^2.0.1-32920211122002",
+        "@dcloudio/uni-cli-i18n": "^2.0.1-32920211122002",
         "@dcloudio/uni-cli-shared": "^2.0.1-32920211122002",
         "@dcloudio/uni-migration": "^2.0.1-32920211122002",
         "@dcloudio/uni-template-compiler": "^2.0.1-32920211122002",
