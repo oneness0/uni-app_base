@@ -11638,10 +11638,10 @@ uuid@^8.3.0:
   resolved "https://registry.npm.taobao.org/uuid/download/uuid-8.3.2.tgz?cache=0&sync_timestamp=1607460209394&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fuuid%2Fdownload%2Fuuid-8.3.2.tgz#80d5b5ced271bb9af6c445f21a1a04c606cefbe2"
   integrity sha1-gNW1ztJxu5r2xEXyGhoExgbO++I=
 
-uview-ui@~2.0.24:
-  version "2.0.24"
-  resolved "https://registry.yarnpkg.com/uview-ui/-/uview-ui-2.0.24.tgz#446b98779451f95f7e30ca24f4b52a67309ceb98"
-  integrity sha512-9dmlwjqbkKGqWtC/utbcpBmuPgTcZlfEa3lWoWF3P/UP9yjub8dcIKSYq0AkNTXIAm4pqP/nFDYFwJtVGBfDCQ==
+uview-ui@~2.0.27:
+  version "2.0.27"
+  resolved "https://registry.yarnpkg.com/uview-ui/-/uview-ui-2.0.27.tgz#1a7dde9c6246e851d768f3efd44b5fb26774a2e1"
+  integrity sha512-fl35rlguNPfXnwNoVv0w4zS1blFFxxSPuGR1+9SbpFGC33aiTBaoFWs/4Fppj0foS/kDCqSWcJiymNmQjPBD4g==
 
 v8-to-istanbul@^7.0.0:
   version "7.1.1"
