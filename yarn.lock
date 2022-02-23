@@ -1053,10 +1053,10 @@
     "@babel/types" "^7.3.3"
     vue-template-compiler "^2.6.10"
 
-"@dcloudio/uni-ui@^1.4.11":
-  version "1.4.11"
-  resolved "https://registry.yarnpkg.com/@dcloudio/uni-ui/-/uni-ui-1.4.11.tgz#d9bd40be9db7de9ba20d0a884a957dde67b5c65c"
-  integrity sha512-DaS4w8DF4GmT4kUqMB8AOhPKDeJ4OA99+PeWll1t1AbfJjjecGLDGPXEOq7YcYZcN3TyxKct0CnqpJsTDgTFoQ==
+"@dcloudio/uni-ui@^1.4.12":
+  version "1.4.12"
+  resolved "https://registry.yarnpkg.com/@dcloudio/uni-ui/-/uni-ui-1.4.12.tgz#0482929068780ed7373aff3535fb4433cade22a1"
+  integrity sha512-sGVHU8Fz/L6NtrsClw8d38SPI16oCgBBQ7fYBVTV1hgS8brFVL56ti9tbY/Qx5qw6+ZPzAzb9lfiG6Tqi4kIJw==
 
 "@dcloudio/vue-cli-plugin-hbuilderx@^2.0.1-33920220208001":
   version "2.0.1-33920220208001"
@@ -11638,10 +11638,10 @@ uuid@^8.3.0:
   resolved "https://registry.npm.taobao.org/uuid/download/uuid-8.3.2.tgz?cache=0&sync_timestamp=1607460209394&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fuuid%2Fdownload%2Fuuid-8.3.2.tgz#80d5b5ced271bb9af6c445f21a1a04c606cefbe2"
   integrity sha1-gNW1ztJxu5r2xEXyGhoExgbO++I=
 
-uview-ui@~2.0.27:
-  version "2.0.27"
-  resolved "https://registry.yarnpkg.com/uview-ui/-/uview-ui-2.0.27.tgz#1a7dde9c6246e851d768f3efd44b5fb26774a2e1"
-  integrity sha512-fl35rlguNPfXnwNoVv0w4zS1blFFxxSPuGR1+9SbpFGC33aiTBaoFWs/4Fppj0foS/kDCqSWcJiymNmQjPBD4g==
+uview-ui@~2.0.28:
+  version "2.0.28"
+  resolved "https://registry.yarnpkg.com/uview-ui/-/uview-ui-2.0.28.tgz#f30c2a1b2618fe29aa18d8efdd52ce9482ac4117"
+  integrity sha512-H50WZJg/SIjpv1mcxvMaCcZgOWMyE+iWy7ANe/ZtvZgsPaYzMYzZdhiHl7ml0bA72fSJUseahSVLen8WhCVpRA==
 
 v8-to-istanbul@^7.0.0:
   version "7.1.1"
