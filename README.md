@@ -1,4 +1,4 @@
-## uni-app 初始模板
+## uni-app 初始模板 (vue2)
 
 ### 简介
 
@@ -21,16 +21,16 @@
 
 ### 快速启动
 
-推荐使用[yarn](https://classic.yarnpkg.com/zh-Hans/docs/install/#windows-stable)（其他涉及到 npm 命令会用 yarn 介绍）
+推荐使用[pnpm](https://www.pnpm.cn/)（其他涉及到 npm 命令会用 pnpm 介绍）
 
 ```bash
 # 1.安装依赖
-yarn
+pnpm i
 # OR
 npm i
 
 # 2.运行h5项目
-yarn serve
+pnpm serve
 # OR
 npm run serve
 
@@ -97,13 +97,13 @@ vuex 的优化写法参考[uview 给的方案](http://www.uviewui.com/guide/glob
 
 #### 自定义 npm 脚本
 
--   `yarn update`(只支持 yarn): 更新 uni-app 编译器 、uni-ui 和 uview，自动更新 package.json 并下载包。为什么不直接用npm自带的`npm update`，因为它不能筛选包，并会把 package.json 中所有的包更新。
+-   `pnpm uvm`(只支持 pnpm): 更新 uni-app 编译器 、uni-ui 和 uview，自动更新 package.json 并下载包。为什么不直接用 npm 自带的`npm uvm`，因为它不能筛选包，并会把 package.json 中所有的包更新。
 
-    > 更改 update 规则请参考[npm-check-updates](https://github.com/raineorshine/npm-check-updates)文档, 修改位置位于 package.json 下的:  
-    > "update": "node src/common/scripts/scripts.js update && ncu <font color=#d73a49>\"/^@dcloudio.\*\$|uview-ui/\"</font> -u && yarn"
+    > 更改 uvm 规则请参考[npm-check-updates](https://github.com/raineorshine/npm-check-updates)文档, 修改位置位于 package.json 下的:  
+    > "uvm": "node src/common/scripts/scripts.js update && ncu <font color=#d73a49>\"/^@dcloudio.\*\$|uview-ui/\"</font> -u && pnpm i"
 
--   `yarn temp 文件名 [,路径]`: 生成页面模板
--   `yarn temp:com 文件名 [,路径]`: 生成组件模板
+-   `pnpm temp 文件名 [,路径]`: 生成页面模板
+-   `pnpm temp:com 文件名 [,路径]`: 生成组件模板
 
 #### eruda 调试
 

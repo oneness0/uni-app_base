@@ -4,7 +4,7 @@ const { domain, productionGzip, productionGzipExtensions } = require('./src/comm
 
 module.exports = {
     // 通过Babel显式转译指定依赖
-    transpileDependencies: ['luch-request'],
+    transpileDependencies: ['luch-request', 'uview-ui'],
     //多核构建
     parallel: true,
 

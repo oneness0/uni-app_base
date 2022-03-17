@@ -18,7 +18,6 @@ export default {
 
 <style lang="scss">
 /*每个页面公共css */
-@import 'uview-ui/index.scss';
 uni-page-body {
     color: #0a0a0a;
 }

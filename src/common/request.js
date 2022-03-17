@@ -4,7 +4,6 @@
  * 请求封装
  */
 import Request from 'luch-request';
-import guid from 'uview-ui/libs/function/guid';
 import { requestConfig, domain } from './config';
 
 const getTokenStorage = () => {
@@ -46,7 +45,7 @@ http.interceptors.request.use(
         // 是否显示loading
         const { showLoading, loadingText, loadingMask, loadingTime } = config.custom;
         if (showLoading) {
-            const timeGuid = guid();
+            const timeGuid = uni.$u.guid();
             config.custom.guid = timeGuid;
             timer.set(
                 timeGuid,
