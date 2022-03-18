@@ -2,7 +2,7 @@
 
 ### 简介
 
-使用[vue-cli 命令行](https://uni-app.dcloud.io/quickstart?id=_2-%e9%80%9a%e8%bf%87vue-cli%e5%91%bd%e4%bb%a4%e8%a1%8c)方式创建的 uni-app 项目Cancel changes
+使用[vue-cli 命令行](https://uni-app.dcloud.io/quickstart?id=_2-%e9%80%9a%e8%bf%87vue-cli%e5%91%bd%e4%bb%a4%e8%a1%8c)方式创建的 uni-app 项目模板
 
 模板具有以下功能特性:
 
