@@ -1,13 +1,13 @@
 <script>
 import { erudaDebug } from '@/common/config';
 export default {
-    onLaunch: function () {
+    onLaunch: function() {
         console.log('App Launch');
     },
-    onShow: function () {
+    onShow: function() {
         console.log('App Show');
     },
-    onHide: function () {
+    onHide: function() {
         console.log('App Hide');
     },
     globalData: {
@@ -17,6 +17,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import 'uview-ui/index.scss';
 /*每个页面公共css */
 uni-page-body {
     color: #0a0a0a;

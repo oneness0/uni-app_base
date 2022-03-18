@@ -44,7 +44,7 @@
         "test:ios": "cross-env UNI_PLATFORM=app-plus UNI_OS_NAME=ios jest -i",
         "test:mp-baidu": "cross-env UNI_PLATFORM=mp-baidu jest -i",
         "test:mp-weixin": "cross-env UNI_PLATFORM=mp-weixin jest -i",
-        "uvm": "node src/common/scripts/scripts.js update && ncu \"/^@dcloudio.*$|uview-ui/\" -u && pnpm i",
+        "uvm": "node src/common/scripts/scripts.js && ncu \"/^@dcloudio.*$|uview-ui/\" -u && yarn",
         "temp": "node src/common/scripts/template.js",
         "temp:com": "node src/common/scripts/component.js"
     },
@@ -102,7 +102,7 @@
         "jest": "^26.6.3",
         "mini-types": "*",
         "miniprogram-api-typings": "*",
-        "npm-check-updates": "^12.5.3",
+        "npm-check-updates": "^11.8.5",
         "postcss-comment": "^2.0.0",
         "sass": "^1.49.9",
         "sass-loader": "^10.2.1",

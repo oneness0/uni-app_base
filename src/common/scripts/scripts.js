@@ -1,9 +1,9 @@
 /* npm脚本 */
 const argv = JSON.parse(process.env.npm_config_argv).original;
 const inquirer = require('inquirer');
-switch (argv[1] || '') {
+switch (argv[0] || '') {
     case 'uvm':
-        if (argv[2] === '-y') {
+        if (argv[1] === '-y') {
             break;
         }
         inquirer
