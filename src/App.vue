@@ -23,9 +23,10 @@ uni-page-body {
     color: #0a0a0a;
 }
 .container {
+    width: 100vw;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    box-sizing: border-box;
     min-height: calc(100vh - var(--window-top));
 }
 </style>

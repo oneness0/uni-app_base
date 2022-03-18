@@ -1,9 +1,11 @@
 <template>
-    <div class="container">
-        <p>uniapp初始模板</p>
-        <p style="display: flex">uni-ui展示: <uni-rate :size="18" :value="5" /></p>
-        <p>uviews展示: <u-rate @change="rateChange" :value="vuex_star.rate"></u-rate>{{ vuex_star.rate }}星</p>
-        <u-button type="primary" @click="$u.route('/pages/demo/home')">Next to home</u-button>
+    <div class="container index">
+        <view class="rate-box">
+            <text>uviews组件展示: </text>
+            <u-rate @change="rateChange" :value="vuex_star.rate" allowHalf size="21" active-color="#2979ff" inactive-color="#b2b2b2"></u-rate>
+        </view>
+        <div>(刷新看vuex数据持久化效果)</div>
+        <u-button type="primary" @click="$u.route('/pages/demo/home')" class="nav-btn">Next to home</u-button>
     </div>
 </template>
 
@@ -14,25 +16,28 @@ export default {
     },
     methods: {
         rateChange(e) {
-            this.$u.vuex('vuex_star.rate', e);
-        }
+            this.$u.vuex("vuex_star.rate", e);
+        },
     },
-    mounted() {
-        this.$http.post('/test');
-        setTimeout(() => {
-            this.$http.post('/testError').catch(() => {
-                uni.showToast({
-                    title: 'testError请求fail',
-                    icon: 'none'
-                });
-            });
-        }, 1000);
-    }
+    mounted() {},
 };
 </script>
 
 <style lang="scss">
-p {
-    padding: 15rpx 0;
+.index {
+    font-size: 14px;
+    padding-top: 20rpx;
+    align-items: center;
+    .rate-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 6px;
+    }
+    .nav-btn {
+        margin-top: auto;
+        margin-bottom: 30px;
+        width: 300rpx;
+    }
 }
 </style>

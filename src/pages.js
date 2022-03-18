@@ -11,7 +11,10 @@ module.exports = hot((pagesJson = {}) => {
     let basePages = [
         // 设置首页
         {
-            path: 'pages/demo/index'
+            path: 'pages/demo/index',
+            style: {
+                navigationBarTitleText: 'uniapp基础模板'
+            }
         }
     ];
     // subPackages的初始配置
