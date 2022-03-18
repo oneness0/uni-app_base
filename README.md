@@ -2,7 +2,7 @@
 
 ### 简介
 
-使用[vue-cli 命令行](https://uni-app.dcloud.io/quickstart?id=_2-%e9%80%9a%e8%bf%87vue-cli%e5%91%bd%e4%bb%a4%e8%a1%8c)方式创建的 uni-app 项目
+使用[vue-cli 命令行](https://uni-app.dcloud.io/quickstart?id=_2-%e9%80%9a%e8%bf%87vue-cli%e5%91%bd%e4%bb%a4%e8%a1%8c)方式创建的 uni-app 项目Cancel changes
 
 模板具有以下功能特性:
 
@@ -48,6 +48,7 @@ easycom 引入的组件无需再写 import，相关规则在 page.json>easycom �
 基于[luch-request](https://www.quanzhan.co/luch-request/guide/3.x/)（请求 API 参见 luch-request 3.x 版本的文档）  
 封装的 request.js 挂载在 vue 的 prototype 上`Vue.prototype.$http = http`  
 全局 loading 的配置可在 config.js 中的 requestConfig 修改
+
 
 ```js
 // config.js
@@ -150,6 +151,8 @@ vuex 的优化写法参考[uview 给的方案](http://www.uviewui.com/guide/glob
  ┣ 📜README.md
  ┣ 📜vue.config.js
 ```
+### 项目预览
+![localhost_8585_(iPhone SE)](https://user-images.githubusercontent.com/25880389/158962574-cee2c7d4-de7a-4fa4-a053-67318a90faca.png)
 
 ### TODO
 
