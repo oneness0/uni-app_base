@@ -1,0 +1,17 @@
+{
+  "editor.tabSize": 2,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.formatOnSave": false,
+  "[wxml]": {
+    "editor.defaultFormatter": "qiu8310.minapp-vscode"
+  },
+  "files.associations": {
+    "*.wxss": "css"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}

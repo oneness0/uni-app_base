@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "jsx": "preserve",
+    "types": ["@dcloudio/types", "miniprogram-api-typings", "mini-types"]
+  },
+  "vueCompilerOptions": {
+    "target": 2.7
+  }
+}
