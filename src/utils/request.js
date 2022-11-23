@@ -6,7 +6,9 @@ module.exports = (vm) => {
     /* config 为默认全局配置*/
     /* 根域名 */
     config.baseURL =
-      process.env.NODE_ENV === 'development' && uni.$u.platform !== 'mp' ? '/basic-api' : process.env.VUE_APP_DOMAIN;
+      process.env.NODE_ENV === 'development' && uni.$u.platform !== 'mp'
+        ? process.env.VUE_APP_BASEAPI
+        : process.env.VUE_APP_DOMAIN;
     config.custom = {
       auth: true,
       catch: true,

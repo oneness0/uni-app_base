@@ -1,3 +1,4 @@
+const baseApi = process.env.VUE_APP_BASEAPI;
 module.exports = {
   // 通过Babel显式转译指定依赖
   transpileDependencies: ['uview-ui'],
@@ -20,11 +21,11 @@ module.exports = {
   devServer: {
     // 配置服务器代理
     proxy: {
-      '^/basic-api': {
+      [`^/${baseApi}`]: {
         target: process.env.VUE_APP_DOMAIN, // 对应的代理地址
         changeOrigin: true,
         pathRewrite: {
-          '^/basic-api': '',
+          [`^/${baseApi}`]: '',
         },
       },
     },
