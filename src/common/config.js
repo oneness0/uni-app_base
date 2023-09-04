@@ -5,8 +5,6 @@ module.exports = {
     productionGzip: true,
     // 需要gzip压缩的文件后缀
     productionGzipExtensions: ["js", "css", "ttf", "svg"],
-    // 是否启用移动端h5调试，url后加eruda=true启用(只在h5和dev环境有效)
-    erudaDebug: true,
     requestConfig: {
         showLoading: true, // 是否显示请求中的loading
         loadingText: "请求中...",

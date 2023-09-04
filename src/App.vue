@@ -1,5 +1,4 @@
 <script>
-import { erudaDebug } from '@/common/config';
 export default {
     onLaunch: function() {
         console.log('App Launch');
@@ -10,9 +9,6 @@ export default {
     onHide: function() {
         console.log('App Hide');
     },
-    globalData: {
-        erudaDebug
-    }
 };
 </script>
 

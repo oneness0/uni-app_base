@@ -90,7 +90,7 @@ tip: 多个 loading 触发时, 默认前面的 loadingText 不会被后面的覆
 
 #### vuex
 
-vuex 的优化写法参考[uview 给的方案](http://www.uviewui.com/guide/globalVariable.html#%E5%85%B7%E4%BD%93%E5%AE%9E%E7%8E%B0)(去掉了 uview 的 vuex 数据持久化方式, 改用 vuex-persistedstate 实现)
+vuex 支持自动引入modules；vuex 数据持久化方式用 vuex-persistedstate 实现
 
 #### page 模块化
 
@@ -133,7 +133,8 @@ vuex 的优化写法参考[uview 给的方案](http://www.uviewui.com/guide/glob
  ┃ ┃ ┗ 📜index.js
  ┃ ┣ 📂static            # 静态资源
  ┃ ┣ 📂store
- ┃ ┃ ┣ 📜$u.mixin.js     # vuex优化
+ ┃ ┃ ┣ 📂modules
+ ┃ ┃ ┣ 📜getters.js
  ┃ ┃ ┗ 📜index.js
  ┃ ┣ 📜App.vue
  ┃ ┣ 📜main.js

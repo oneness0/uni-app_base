@@ -1,10 +1,9 @@
-const webpack = require('webpack');
-const CompressionWebpackPlugin = require('compression-webpack-plugin');
-const { domain, productionGzip, productionGzipExtensions } = require('./src/common/config');
+const CompressionWebpackPlugin = require('compression-webpack-plugin')
+const { domain, productionGzip, productionGzipExtensions } = require('./public/config.js');
 
 module.exports = {
     // 通过Babel显式转译指定依赖
-    transpileDependencies: ['luch-request', 'uview-ui'],
+    transpileDependencies: ['uview-ui'],
     //多核构建
     parallel: true,
 
@@ -42,7 +41,7 @@ module.exports = {
     },
 
     devServer: {
-        disableHostCheck: true,
+        allowedHosts: 'all',
         port: '8585',
         proxy: {
             '/api': {
