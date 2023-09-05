@@ -1,6 +1,6 @@
 /* 全局配置文件 */
 module.exports = {
-    domain: "xxxxxxxxxxxxx", // api前缀
+    domain: "", // 接口域名
     // 是否使用gzip
     productionGzip: true,
     // 需要gzip压缩的文件后缀

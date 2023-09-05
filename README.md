@@ -7,7 +7,7 @@
 模板具有以下功能特性:
 
 -   使用[easycom 模式](https://uni-app.dcloud.io/collocation/pages?id=easycom)引入[uview-ui](http://www.uviewui.com/)和[uni-ui](https://github.com/dcloudio/uni-ui)UI 框架
--   使用[luch-request](https://www.quanzhan.co/luch-request/guide/3.x/)作为网络请求库。并完善了拦截器、全局请求 loading 控制等
+-   使用luch-request作为网络请求库，uView对其进行了简单封装以及说明。并完善了拦截器、全局请求 loading 控制等
 -   使用[weapp-cookie](https://github.com/charleslo1/weapp-cookie#readme)库让小程序和 APP 端支持 cookie
 -   使用[vuex-persistedstate](https://github.com/robinvdvleuten/vuex-persistedstate#readme)库让 vuex 数据持久化
 -   使用[uni-pages-hot-modules](https://github.com/devilwjp/uni-pages-hot-modules#readme)库让 page.josn 支持模块化
@@ -45,9 +45,10 @@ easycom 引入的组件无需再写 import，相关规则在 page.json>easycom �
 
 #### 请求封装
 
-基于[luch-request](https://www.quanzhan.co/luch-request/guide/3.x/)（请求 API 参见 luch-request 3.x 版本的文档）  
-封装的 request.js 挂载在 vue 的 prototype 上`Vue.prototype.$http = http`  
-全局 loading 的配置可在 config.js 中的 requestConfig 修改
+集成自优秀的开源请求库：[luch-request](https://www.quanzhan.co/luch-request/guide/3.x/)，uView对其进行了简单封装以及说明。
+[使用说明](http://www.uviewui.com/js/http.html)
+- 封装的 request.js 挂载在`uni.$u`上  
+- 全局 loading 的配置可在 config.js 中的 requestConfig 修改
 
 
 ```js

@@ -1,5 +1,5 @@
 const CompressionWebpackPlugin = require('compression-webpack-plugin')
-const { domain, productionGzip, productionGzipExtensions } = require('./public/config.js');
+const { domain, productionGzip, productionGzipExtensions } = require('./src/common/config');
 
 module.exports = {
     // 通过Babel显式转译指定依赖

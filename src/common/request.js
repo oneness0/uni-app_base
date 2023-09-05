@@ -20,7 +20,7 @@ const http = (vm) => {
     // 初始化请求配置
     uni.$u.http.setConfig((config) => {
         /* config 为默认全局配置*/
-        config.baseURL = domain; /* 根域名 */
+        config.baseURL = process.env.NODE_ENV === 'development' ? '/api' : domain ||''; /* 根域名 */
         config.custom = {
             ...requestConfig,
             guid: '' // 指定定时器的唯一性
