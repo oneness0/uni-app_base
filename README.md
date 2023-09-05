@@ -156,6 +156,10 @@ vuex 支持自动引入modules；vuex 数据持久化方式用 vuex-persistedsta
 ### 项目预览
 ![localhost_8585_(iPhone SE)](https://user-images.githubusercontent.com/25880389/158962574-cee2c7d4-de7a-4fa4-a053-67318a90faca.png)
 
+### 推荐安装的vscode插件
+- WXML - Language Service  
+- Vue Language Features (Volar)
+
 ### TODO
 
 API 管理或自动生成  

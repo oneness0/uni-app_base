@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "allowJs": true,
     "baseUrl": "./",
     "paths": {
       "@/*": ["src/*"]
@@ -10,5 +11,8 @@
 			"mini-types"
 		]
   },
-  "exclude": ["node_modules", "dist"]
+  "exclude": ["node_modules", "dist"],
+  "vueCompilerOptions": {
+    "target": 2, // For Vue version <= 2.6.14
+  }
 }

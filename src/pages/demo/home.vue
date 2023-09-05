@@ -3,12 +3,12 @@
 </template>
 
 <script>
-export default {
+import { defineComponent } from "@vue/runtime-core";
+export default defineComponent({
     data() {
         return {};
-    }
-};
+    },
+});
 </script>
 
-<style lang="scss">
-</style>
+<style lang="scss"></style>

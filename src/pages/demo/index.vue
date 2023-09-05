@@ -9,13 +9,14 @@
 </template>
 
 <script>
-export default {
+import { defineComponent } from "@vue/runtime-core";
+export default defineComponent({
     data() {
         return {};
     },
     methods: {},
     mounted() {},
-};
+});
 </script>
 
 <style lang="scss">
