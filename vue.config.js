@@ -41,17 +41,17 @@ module.exports = {
     },
 
     devServer: {
-        allowedHosts: 'all',
-        port: '8585',
-        proxy: {
-            '/api': {
-                target: domain,
-                secure: true,
-                changeOrigin: true,
-                pathRewrite: {
-                    '^/api': ''
-                }
-            }
-        }
+        // allowedHosts: 'all',
+        // port: '8585',
+        // proxy: {
+        //     '/api': {
+        //         target: domain,
+        //         secure: true,
+        //         changeOrigin: true,
+        //         pathRewrite: {
+        //             '^/api': ''
+        //         }
+        //     }
+        // }
     }
 };
